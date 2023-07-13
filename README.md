@@ -7,6 +7,14 @@ The following is an abstract of the article.
 
 Background and Objective: In neurosurgery, fusing clinical images and depth images that can improve the information and details is beneficial to surgery. We found that the registration of face depth images was invalid frequently using existing methods. To abundant traditional image methods with depth information, a method in registering with depth images and traditional clinical images was investigated. Methods: We used the dlib library, a C++ library that could be used in face recognition, and recognized the key points on faces from the structure light camera and CT image. The two key point clouds were registered for coarse registration by the ICP method. Fine registration was finished after coarse registration by the ICP method. Results: The root means squared error (RMSE) after coarse and fine registration is as low as 0.995913 mm. Compared with traditional methods, it also takes less time. Conclusions: The new method successfully registered the facial depth image from structure light images and CT with a low error, and that would be promising and efficient in clinical application of neurosurgery.
 
+## Dependent related libraries
+
+* VTK
+* ITK
+* librealsense
+* dlib
+* PCL
+
 ## The library API
 
 ### CameraFaceExtract
